@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- This line imports the font-family 'Roboto' -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <title>Fonts</title>
+    <style>
+        body {
+            /* If the font you want to use isn't web-safe, then you need to include the font in a file in your directory */
+            font-family: 'Roboto', sans-serif;
+            /* Increases or decreases the font size */
+            font-size: 18px;
+
+            font-weight: bolder;
+            /* adds more space between the lines of text, relatively */
+            line-height: 1.6em;
+            /* sets the background color */
+            background-color: whitesmoke;
+        }
+        /* This is how you target a span within a paragraph */
+        #welcome p span {
+            font-weight: lighter;
+        }
+        #about p span {
+            font-style: italic;
+        }    
+    </style>
+</head>
+<body>
+    <div id="welcome">
+        <h2 class="primary-heading">Welcome</h2>
+        <p>Lorem ipsum dolor, sit amet <span> Here's the targeted text</span> elit. Voluptate quas tempora fugiat aperiam adipisci ducimus commodi perferendis iusto eveniet quae.</p>
+    </div>
+    <div id="about">
+        <h2>About</h2>
+        <p>Lorem ipsum dolor sit <span>Here's the targeted text.</span> amet consectetur adipisicing elit. Laboriosam deserunt vero consequuntur, incidunt iure doloremque nemo itaque nam aut rerum.</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Selectors</title>
+    <style>
+        /* Element Selectors */
+        body {
+            background-color: #333;
+        }
+        /* . is for classes */r
+       .primary-heading {
+            color: green;
+        }
+        /* the # is for Id's */
+        #welcome {
+            background-color: sienna;
+        }
+        /* multiple selectors */
+        #welcome, #about {
+            border: 1px solid #cccccc;
+            padding: 10px;
+            margin-bottom: 5px;
+        }
+        /* Nested Selector [NB: how this doesn't use a comma] */
+        #welcome p {
+            font-size: 20px;
+        }
+        #about {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="welcome">
+        <h2 class="primary-heading">Welcome</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate quas tempora fugiat aperiam adipisci ducimus commodi perferendis iusto eveniet quae.</p>
+    </div>
+    <div id="about">
+        <h2>About</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam deserunt vero consequuntur, incidunt iure doloremque nemo itaque nam aut rerum.</p>
+    </div>
+</body>
+</html> 
