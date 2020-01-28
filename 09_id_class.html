@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Div, span, id and class</title>
+    <style>
+        .card {
+           border: 1px solid #cccccc; 
+           background: seashell;
+           padding: 20px;
+           margin-bottom: 10px;
+        }
+
+        .enhance {
+            color: yellow;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <div id="main-header" class="card">
+        <h1>My Website</h1>
+        <p>A site about me</p>
+    </div>
+
+    <div id="about" class="card">
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+    </div>
+<!-- If you want to use div class enhance as inline instead of block, use span clas="enhance" instead -->
+    <div id="about">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        In fugiat porro aliquid, qui ducimus <div class="enhance"</div> cum 
+        alias, non quisquam 
+        minus aspernatur tempora facilis minima facere laborum dolor 
+        adipisci, nobis id.</p>
+    </div>
+
+    <div id="contact" class="card">
+    <h3>Contact Me</h3>
+    <ul>   
+        <li>Address: 4102 Bon Aire Dr.</li>
+        <li>Phone: 804-513-5077</li>
+        <li>Email: jim.partee@gmail.com</li>
+    </ul>
+    </div>
+
+    <div id="footer">
+        <p>Copyright &copy; 2020</p>
+    </div>
+    
+</body>
+</html>
